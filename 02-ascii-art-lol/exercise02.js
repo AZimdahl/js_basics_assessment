@@ -10,7 +10,7 @@
 (function() {
 
     //your code here
-    for (i = 1; i < artArray.length; i++) {
+    for (let i = 1; i < artArray.length; i++) {
         artArray.splice(i, 1)
     }
 
