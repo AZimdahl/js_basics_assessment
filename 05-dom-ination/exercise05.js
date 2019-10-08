@@ -21,5 +21,17 @@
 (function () {
 
     //your code here
+    const title = document.querySelector("h1");
+    let toggle = false;
+    title.addEventListener("click", toggleTitle)
 
+    function toggleTitle () {
+        toggle = !toggle;
+        if (toggle == true) {
+            title.style.color = "red"
+        }
+        else {
+            title.style.color = "black"
+        }
+    }
 })();
