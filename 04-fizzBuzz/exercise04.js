@@ -24,5 +24,30 @@
      */
 
     //your code here
+    function fizzBuzz(maxValue) {
+        let myString = ""
+        for (let i = 1; i <= maxValue; i++) {
+            if (i % 2 === 0 && i % 3 === 0) {
+                myString += ", FizzBuzz"
+            }
+            else if (i % 2 === 0) {
+                myString += ", Fizz"
+            }
+            else if (i % 3 === 0) {
+                myString += ", Buzz"
+            }
+            else {
+                //first number in the string gets added without a comma before
+                if (i === 1) {
+                    myString = i;
+                }
+                else {
+                    myString = myString + ", " + i;
+                }
+            }
+        }
+        return myString;
+    }
 
+    console.log(fizzBuzz(12));
 })();
