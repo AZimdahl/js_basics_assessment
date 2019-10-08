@@ -23,15 +23,39 @@
     //your code here
     const title = document.querySelector("h1");
     let toggle = false;
-    title.addEventListener("click", toggleTitle)
+    title.addEventListener("click", toggleTitle);
 
     function toggleTitle () {
         toggle = !toggle;
         if (toggle == true) {
-            title.style.color = "red"
+            title.style.color = "red";
         }
         else {
-            title.style.color = "black"
+            title.style.color = "black";
         }
+
+        alert("Surprise!")
+    }
+
+    const sideLinks = document.querySelectorAll(".section");
+    for (let i = 0; i < sideLinks.length; i++ ) {
+        if (i % 2 == 0) {
+            sideLinks[i].style.visibility = "hidden";
+        }
+    }
+
+    const bacon = document.querySelectorAll("p");
+    for (let i of bacon) {
+       i.innerHTML = i.innerHTML.replace(/bacon/gi, "LASER VISION");
+    }
+
+    const posts = document.querySelectorAll(".post");
+    for (let i = posts.length-1; i > posts.length - 4; i--) {
+       posts[i].remove();
+    }
+
+    const ads = document.querySelectorAll(".hide-for-small p img");
+    for (let i = 0; i < 2; i++) {
+        ads[i].remove();
     }
 })();
