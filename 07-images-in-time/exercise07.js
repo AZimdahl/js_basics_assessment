@@ -31,5 +31,24 @@
   }
 
   //your code here
+  const imgs = {
+    img0: "./cats.jpg",
+    img1: "./hugger.jpg",
+    img2: "./internet.jpg",
+    img3: "./jackson.jpg",
+    img4: "./washington.jpg"
+  }
 
+  const imgArr = [imgs.img0, imgs.img1, imgs.img2, imgs.img3, imgs.img4];
+
+  function imgChange () {
+    addImage(imgArr[getRandomInt(4)]);
+    setTimeout(imgChange, 2500);
+  }
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  imgChange()
 })();
