@@ -42,7 +42,7 @@
   const imgArr = [imgs.img0, imgs.img1, imgs.img2, imgs.img3, imgs.img4];
 
   function imgChange () {
-    addImage(imgArr[getRandomInt(4)]);
+    addImage(imgArr[getRandomInt(5)]);
     setTimeout(imgChange, 2500);
   }
 
