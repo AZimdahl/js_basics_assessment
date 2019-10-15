@@ -17,8 +17,8 @@
     //your code here
     //source = https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
     function virginia () {
-        let count = washingtonInfo.match(/virginia/gi.length);
-        console.log(count);
+        let count = washingtonInfo.match(/virginia/gi);
+        console.log(count.length);
     }
 
     virginia()
